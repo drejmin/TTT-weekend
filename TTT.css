@@ -23,7 +23,7 @@ body{
     font-size: 3vmin;
   }
   
-  #markers{
+  /* #markers{
     display:grid;
     grid-template-columns: repeat(7,10vmin);
     gap: 1vmin;
@@ -43,11 +43,11 @@ body{
     transition: transform 150ms ease-in;
     border-top-color: darkgrey;
   }
-  
+   */
   #board{
     display:grid;
-    grid-template-columns: repeat(7, 10vmin);
-    grid-template-rows: repeat(6,10vmin);
+    grid-template-columns: repeat(3, 10vmin);
+    grid-template-rows: repeat(3,10vmin);
     gap: 1vmin;
     margin-top: -4vmin;
   }
