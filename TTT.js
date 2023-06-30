@@ -17,10 +17,10 @@ const playAgainBtn = document.querySelector('button');
 
 //-------------------------event listeners---------------------------
 playAgainBtn.addEventListener('click',init);
-board.addEventListener('click', placeMarker);
 document.getElementById('board').addEventListener('click',placeMarker);
 //-------------------------functions---------------------------------
-init(); //Initialize all and call render();
+init();
+//Initialize all and call render();
 
 function init(){
 board = 
@@ -28,7 +28,10 @@ board =
     null,null,null,
     null,null,null]
 
-render();}
+turn =1;
+winner =null;
+render();
+}
 
 
 function placeMarker(evt) {
@@ -48,15 +51,15 @@ winner = null;
 render();
 }
 
+function render() {
+  renderBoard();
+  renderMessage();
+  renderControls();
+  playAgainBtn.disabled =!winner;
+
 function getWinner(){
-  
-  
+    
   // Visualize all state in the DOM
-  function render() {
-    renderBoard();
-    renderMessage();
-    renderControls();
-    playAgainBtn.disabled =!winner;
   }
   render();
   function renderBoard() {
