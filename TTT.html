@@ -6,27 +6,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>TIC-TAC-TOE</title>
+    <link href="TTT.css" rel="stylesheet" type="text/css" href="TTT.js"/>
+    
+    <title>TIC-TAC-TOE
+    </title>
 </head>
 <body>
     <header>
         Tic-Tac-Toe 
     </header>
-    <h1> Player X's turn </h1>
+    <h1> Player <span class="current-player">X</span>'s turn </h1>
     <section id = 'board'>
-        <div id = 'c0r0'></div>
-        <div id = 'c1r0'></div>
-        <div id = 'c2r0'></div>
+        <div class = 'box' id = 'bx-1'></div>
+        <div class = 'box' id = 'bx-2'></div>
+        <div class = 'box' id = 'bx-3'></div>
 
-        <div id = 'c0r1'></div>
-        <div id = 'c1r1'></div>
-        <div id = 'c2r1'></div>
+        <div class = 'box' id = 'bx-4'></div>
+        <div class = 'box' id = 'bx-5'></div>
+        <div class = 'box' id = 'bx-6'></div>
 
-        <div id = 'c0r2'></div>
-        <div id = 'c1r2'></div>
-        <div id = 'c2r2'></div>
+        <div class = 'box' id = 'bx-7'></div>
+        <div class = 'box' id = 'bx-8'></div>
+        <div class = 'box' id = 'bx-9'></div>
         
+    </section>
+    <section class = 'controls'>
+        <button id='playAgain'> Play Again</button>
     </section>
 </body>
 </html>
