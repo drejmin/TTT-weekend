@@ -4,26 +4,6 @@
     margin:0;
   }
 
-  .box{
-    border: 1.2px solid black;
-    min-width: 80px;
-    min-height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    font-style: bold;
-    font-family: 'Open Sans', sans-serif;
-    flex-direction: column;
-    position: relative;
-  }
-
-  .box:hover{
-    color:white;
-    background-color:rgb(143, 186, 232);
-    position: relative;
-  }
-
 body{
     /* viewport(window) units: vh(viewport height) ex;100 is 100%;, vw(viewport width, vmin( smallest between vh and vw)*/
     height: 100vh;
@@ -37,54 +17,57 @@ body{
   }
   header{
     font-size: 5vmin;
-    color: darkgrey;
+    color: firebrick;
     letter-spacing: 1vmin;
     margin: 10px 1px 40px 1px;
     color:firebrick;
   }
   
   h1{
-    color:grey;
+    color:firebrick;
     font-size: 3vmin;
     margin: 1px 1px 40px 1px;
   }
-  
+
+  #board>:hover{
+    
+    background-color:rgb(95, 153, 216); 
+  }
+
   #board{
     display:grid;
-    grid-template-columns: repeat(3, 10vmin);
-    grid-template-rows: repeat(3,10vmin);
-    gap: 25px;
+    grid-template-columns: repeat(3, 15vmin);
+    grid-template-rows: repeat(3,15vmin);
+    gap: 10px;
     margin-top: -4vmin;
     transition: transform 150ms ease-in;
     position: relative;
+    background-color: rgb(5, 5, 57);
     
   }
   
   #board >div {
-    display: grid;
-    grid-template-columns: repeat(3, 1.5vmin);
-    grid-template-rows: repeat(3,1.5vmin);
-    max-width: 350px;
-    border: 0.1vmin solid black;   
+    max-width: 400px;
+    border: 1vmin solid black;   
     transition: transform 150ms ease-in;
-    
+    margin: 0.1vmin;
+    background-color: whitesmoke;
   }
-  
+
   button{
     margin-top:7vmin;
     padding: 2vmin;
     font-size: 2vmin;
     border-radius: 5vmin;
-    border: 0.1vmin solid grey;
-    color: grey;
+    border: 0.1vmin solid darkgrey;
+    color: firebrick;
   }
   
   button:hover{
     color:white;
     background-color:rgb(143, 186, 232);
-    
   }
-
+  
   .playerX{
     color:darkgreen;
   }
