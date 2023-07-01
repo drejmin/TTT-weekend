@@ -29,22 +29,22 @@ body{
     margin: 1px 1px 40px 1px;
   }
 
-  #board>:hover{
-    
-    background-color:rgb(95, 153, 216); 
-  }
-
+  
   #board{
-    display:grid;
-    grid-template-columns: repeat(3, 15vmin);
-    grid-template-rows: repeat(3,15vmin);
-    gap: 10px;
-    margin-top: -4vmin;
-    transition: transform 150ms ease-in;
-    position: relative;
-    background-color: rgb(5, 5, 57);
-    
-  }
+      display:grid;
+      grid-template-columns: repeat(3, 15vmin);
+      grid-template-rows: repeat(3,15vmin);
+      gap: 10px;
+      margin-top: -4vmin;
+      transition: transform 150ms ease-in;
+      position: relative;
+      background-color: rgb(5, 5, 57);
+      
+    }
+#board>div:hover{
+      
+      background-color:rgb(95, 153, 216); 
+    }
   
   #board >div {
     max-width: 400px;
@@ -74,3 +74,12 @@ body{
   .playerO{
     color:orange;
   }
+
+  player X{
+    display: inline-block;
+    content: "\00d7";}
+
+player O{
+    display: inline-block;
+    content: "O"
+}
