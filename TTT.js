@@ -57,6 +57,7 @@ function getWinner(){
     // if/else conditional for any way a current player can win
     // 012, 345, 678, 036, 147, 258, 048,246
     if (-1===board[0,1,2]|| 1===board[0,1,2]){return renderMessage();}
+    else if (-1===board[0,1,2]|| 1===board[0,1,2]){return renderMessage();}
     else if (-1===board[3,4,5]|| 1===board[3,4,5]){return renderMessage();}
     else if (-1===board[6,7,8]|| 1===board[6,7,8]){return renderMessage();}
     else if (-1===board[0,3,6]|| 1===board[0,3,6]){return renderMessage();}
